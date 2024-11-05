@@ -1,0 +1,10 @@
+13:30:00 **** Incremental Build of configuration Debug for project REGISTER_EXTERNAL_INTERRUPT ****
+make -j16 all 
+arm-none-eabi-size  REGISTER_EXTERNAL_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1488	      4	   1572	   3064	    bf8	REGISTER_EXTERNAL_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+13:30:00 Build Finished. 0 errors, 0 warnings. (took 234ms)
+

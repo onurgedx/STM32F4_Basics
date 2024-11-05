@@ -1,0 +1,10 @@
+13:36:42 **** Incremental Build of configuration Debug for project HAL_EXTERNAL_INTERRUPT ****
+make -j16 all 
+arm-none-eabi-size  HAL_EXTERNAL_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6372	     28	   1572	   7972	   1f24	HAL_EXTERNAL_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+13:36:42 Build Finished. 0 errors, 0 warnings. (took 184ms)
+
