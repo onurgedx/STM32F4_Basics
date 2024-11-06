@@ -31,9 +31,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define VREFIN_CAL ((uint6_t*) (uint32_t)0x1FFF7A2A)
-#define V23 (float) 0.76
-#define Avg_slope(float) 0.0025
+#define VREFIN_CAL (uint16_t*) (uint32_t)0x1FFF7A2A
+#define V25 (float) 0.76
+#define Avg_slope (float) 0.0025
 
 
 /* USER CODE END PD */
@@ -65,11 +65,36 @@ static void MX_ADC2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void ReadADC1()
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
+	if(__HAL_ADC_GET_FLAG(&hadc1,ADC_FLAG_EOC) !=RESET) //interrupt for ADC1
+	{
+		adc1_value[count]=HAL_ADC_GetValue(&hadc1);
+		count++;
+		/*
+		 * count = 0 => channel 0
+		 * count = 1 => Vrefint channel
+		 * count = 2 => Temperature channel
+		 * */
+		if(count == 3)
+		{
+			Vdda = (float) 3.3* (*VREFIN_CAL)/adc1_value[1];
+			Vadc1 = Vdda * adc1_value[0] /4095;
+			Vsense  = Vdda* adc1_value[2] /4095;
+			temperature = ((Vsense - V25) / Avg_slope) +25;
+			count=0;
+		}
+
+	}
+	if(__HAL_ADC_GET_FLAG(&hadc2,ADC_FLAG_EOC) !=RESET) // interrupt for  ADC2
+	{
+		adc2_value = HAL_ADC_GetValue(&hadc2);
+		Vadc2 = Vdda* adc2_value/4095;
+
+	}
 
 }
-
 
 /* USER CODE END 0 */
 
@@ -105,6 +130,7 @@ int main(void)
   MX_ADC1_Init();
   MX_ADC2_Init();
   /* USER CODE BEGIN 2 */
+  // We do this once here as We activated Continuous conversion mode
   HAL_ADC_Start_IT(&hadc1);
   HAL_ADC_Start_IT(&hadc2);
   /* USER CODE END 2 */
