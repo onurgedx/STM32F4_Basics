@@ -1,4 +1,4 @@
-18:00:14 **** Incremental Build of configuration Debug for project REGISTER-ADC ****
+16:43:13 **** Incremental Build of configuration Debug for project REGISTER-ADC ****
 make -j16 all 
 arm-none-eabi-size  REGISTER-ADC.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  REGISTER-ADC.elf
 Finished building: default.size.stdout
  
 
-18:00:14 Build Finished. 0 errors, 0 warnings. (took 183ms)
+16:43:14 Build Finished. 0 errors, 0 warnings. (took 1s.93ms)
 
