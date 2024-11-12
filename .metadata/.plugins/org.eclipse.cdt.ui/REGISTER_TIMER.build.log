@@ -1,0 +1,10 @@
+16:09:35 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
+make -j16 all 
+arm-none-eabi-size  REGISTER_TIMER.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
+Finished building: default.size.stdout
+ 
+
+16:09:35 Build Finished. 0 errors, 0 warnings. (took 184ms)
+
