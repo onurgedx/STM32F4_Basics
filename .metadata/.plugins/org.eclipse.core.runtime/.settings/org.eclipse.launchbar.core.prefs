@@ -1,13 +1,14 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_EXTERNAL_INTERRUPT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_EXTERNAL_INTERRUPT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER-ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL-ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_ADC_REALVOLTAGE Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_MultipleADCReadAndInternalTemperatureSensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_DAC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_TIMER Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_TIMER_INTERRUPT Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_EXTERNAL_INTERRUPT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_EXTERNAL_INTERRUPT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER-ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL-ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_ADC_REALVOLTAGE Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_MultipleADCReadAndInternalTemperatureSensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_DAC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_TIMER Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_TIMER_INTERRUPT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_TIMER_EXTERNAL_TRIGGER_MODE_1 Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL-ADC\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL-ADC\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_ADC_REALVOLTAGE\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_EXTERNAL_INTERRUPT\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_EXTERNAL_INTERRUPT\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_TIMER_EXTERNAL_TRIGGER_MODE_1\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HAL_TIMER_INTERRUPT\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER-ADC\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:REGISTER_EXTERNAL_INTERRUPT\ Debug/activeLaunchMode=run

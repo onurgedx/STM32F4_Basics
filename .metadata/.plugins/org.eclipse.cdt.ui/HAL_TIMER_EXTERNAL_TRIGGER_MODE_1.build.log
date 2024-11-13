@@ -1,0 +1,10 @@
+15:22:10 **** Incremental Build of configuration Debug for project HAL_TIMER_EXTERNAL_TRIGGER_MODE_1 ****
+make -j16 all 
+arm-none-eabi-size  HAL_TIMER_EXTERNAL_TRIGGER_MODE_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7676	     12	   1644	   9332	   2474	HAL_TIMER_EXTERNAL_TRIGGER_MODE_1.elf
+Finished building: default.size.stdout
+ 
+
+15:22:10 Build Finished. 0 errors, 0 warnings. (took 155ms)
+
