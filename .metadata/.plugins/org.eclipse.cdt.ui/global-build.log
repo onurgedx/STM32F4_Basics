@@ -1,42 +1,29 @@
-16:02:46 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
+13:30:32 **** Incremental Build of configuration Debug for project HAL_TIMER_INTERRUPT ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "REGISTER_TIMER.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\REGISTER_TIMER\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="REGISTER_TIMER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: REGISTER_TIMER.elf
+arm-none-eabi-g++ -o "HAL_TIMER_INTERRUPT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_TIMER_INTERRUPT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_TIMER_INTERRUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_TIMER_INTERRUPT.elf
  
-arm-none-eabi-size  REGISTER_TIMER.elf 
-arm-none-eabi-objdump -h -S REGISTER_TIMER.elf  > "REGISTER_TIMER.list"
+arm-none-eabi-size  HAL_TIMER_INTERRUPT.elf 
+arm-none-eabi-objdump -h -S HAL_TIMER_INTERRUPT.elf  > "HAL_TIMER_INTERRUPT.list"
    text	   data	    bss	    dec	    hex	filename
-   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
+   8404	     12	   1644	  10060	   274c	HAL_TIMER_INTERRUPT.elf
 Finished building: default.size.stdout
  
-Finished building: REGISTER_TIMER.list
+Finished building: HAL_TIMER_INTERRUPT.list
  
-16:02:52 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
+13:49:59 **** Incremental Build of configuration Debug for project HAL_TIMER_INTERRUPT ****
 make -j16 all 
-arm-none-eabi-size  REGISTER_TIMER.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-g++ -o "HAL_TIMER_INTERRUPT.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_TIMER_INTERRUPT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_TIMER_INTERRUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_TIMER_INTERRUPT.elf
+ 
+arm-none-eabi-size  HAL_TIMER_INTERRUPT.elf 
+arm-none-eabi-objdump -h -S HAL_TIMER_INTERRUPT.elf  > "HAL_TIMER_INTERRUPT.list"
    text	   data	    bss	    dec	    hex	filename
-   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
+   8416	     12	   1644	  10072	   2758	HAL_TIMER_INTERRUPT.elf
 Finished building: default.size.stdout
  
-16:06:26 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
-make -j16 all 
-arm-none-eabi-size  REGISTER_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
-Finished building: default.size.stdout
- 
-16:06:49 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
-make -j16 all 
-arm-none-eabi-size  REGISTER_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
-Finished building: default.size.stdout
- 
-16:09:35 **** Incremental Build of configuration Debug for project REGISTER_TIMER ****
-make -j16 all 
-arm-none-eabi-size  REGISTER_TIMER.elf 
-   text	   data	    bss	    dec	    hex	filename
-   1164	      4	   1572	   2740	    ab4	REGISTER_TIMER.elf
-Finished building: default.size.stdout
+Finished building: HAL_TIMER_INTERRUPT.list
  
