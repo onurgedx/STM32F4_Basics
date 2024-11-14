@@ -1111,3 +1111,9 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-14 15:59:03.772
 !MESSAGE Indexed 'HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_INTERNAL' (19 sources, 81 headers) in 0.952 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-14 17:41:23.639
+!MESSAGE Indexed 'HAL_TIMER_INPUT-CAPTURE' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-14 17:41:25.228
+!MESSAGE Indexed 'HAL_TIMER_INPUT-CAPTURE' (19 sources, 81 headers) in 1.02 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
