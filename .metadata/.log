@@ -888,3 +888,12 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-14 14:35:42.564
+!MESSAGE Indexed 'HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-14 14:35:43.964
+!MESSAGE Indexed 'HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL' (19 sources, 81 headers) in 0.853 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-11-14 15:08:24.937
+!MESSAGE Won't launch debug session since we failed to locate the binary.
