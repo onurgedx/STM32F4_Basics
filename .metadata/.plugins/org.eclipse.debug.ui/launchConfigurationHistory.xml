@@ -2,6 +2,7 @@
 <launchHistory>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.debug">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER_PWM/REGISTER_PWM Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_OUTPUT_COMPARE/HAL_TIMER_OUTPUT_COMPARE Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_INTERNAL/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_INTERNAL Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL Debug.launch&quot;/&gt;&#13;&#10;"/>
@@ -16,7 +17,6 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_MultipleADCReadAndInternalTemperatureSensor/HAL_MultipleADCReadAndInternalTemperatureSensor Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_ADC_REALVOLTAGE/HAL_ADC_REALVOLTAGE Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL-ADC/HAL-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER-ADC/REGISTER-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER-ADC/REGISTER-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
@@ -36,6 +36,7 @@
     </launchGroup>
     <launchGroup id="org.eclipse.debug.ui.launchGroup.run">
         <mruHistory>
+            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER_PWM/REGISTER_PWM Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_OUTPUT_COMPARE/HAL_TIMER_OUTPUT_COMPARE Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_INTERNAL/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_INTERNAL Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL/HAL_TIMER_SLAVE_MODE_TRIGGER_MODE_EXTERNAL Debug.launch&quot;/&gt;&#13;&#10;"/>
@@ -50,7 +51,6 @@
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_MultipleADCReadAndInternalTemperatureSensor/HAL_MultipleADCReadAndInternalTemperatureSensor Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL_ADC_REALVOLTAGE/HAL_ADC_REALVOLTAGE Debug.launch&quot;/&gt;&#13;&#10;"/>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/HAL-ADC/HAL-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
-            <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER-ADC/REGISTER-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
         </mruHistory>
         <favorites>
             <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/REGISTER-ADC/REGISTER-ADC Debug.launch&quot;/&gt;&#13;&#10;"/>
