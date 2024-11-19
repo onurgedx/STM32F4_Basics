@@ -1,0 +1,10 @@
+17:04:12 **** Incremental Build of configuration Debug for project HAL_PWM_ServomotorControl_withADC-Potansiyometre ****
+make -j16 all 
+arm-none-eabi-size  HAL_PWM_ServomotorControl_withADC-Potansiyometre.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11052	     12	   1716	  12780	   31ec	HAL_PWM_ServomotorControl_withADC-Potansiyometre.elf
+Finished building: default.size.stdout
+ 
+
+17:04:12 Build Finished. 0 errors, 0 warnings. (took 185ms)
+
