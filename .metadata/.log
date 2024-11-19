@@ -1234,3 +1234,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-19 14:06:54.702
 !MESSAGE Indexed 'HAL_PWM' (19 sources, 81 headers) in 2.03 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-19 15:01:20.999
+!MESSAGE Indexed 'HAL_PWM_Servomotor' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-19 15:01:22.263
+!MESSAGE Indexed 'HAL_PWM_Servomotor' (19 sources, 81 headers) in 0.739 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
