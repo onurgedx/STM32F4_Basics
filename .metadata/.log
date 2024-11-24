@@ -1296,3 +1296,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-24 17:04:09.590
 !MESSAGE Indexed 'HAL_DMA_READ_Multi_ADC_VALUE' (19 sources, 81 headers) in 1.93 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-24 19:17:20.723
+!MESSAGE Indexed 'REGISTER_USART_SEND_MESSAGE' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-24 19:17:22.447
+!MESSAGE Indexed 'REGISTER_USART_SEND_MESSAGE' (19 sources, 81 headers) in 1.17 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
