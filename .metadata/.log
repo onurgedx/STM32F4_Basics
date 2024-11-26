@@ -1362,3 +1362,9 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-11-26 14:22:08.139
 !MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-26 15:08:30.444
+!MESSAGE Indexed 'HAL_USART_BLUETOOTH_LED_CONTROL' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-11-26 15:08:32.001
+!MESSAGE Indexed 'HAL_USART_BLUETOOTH_LED_CONTROL' (19 sources, 81 headers) in 1.03 sec: 4,419 declarations; 17,800 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
