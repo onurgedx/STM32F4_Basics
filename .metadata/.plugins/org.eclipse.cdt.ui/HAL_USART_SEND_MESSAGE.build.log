@@ -1,0 +1,29 @@
+13:50:23 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:49: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   94 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
+      |                                                 ^~~~~~~
+../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   24 | #include "string.h"
+  +++ |+#include <stdio.h>
+   25 | /* USER CODE END Includes */
+../Core/Src/main.c:94:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   94 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
+      |                                                 ^~~~~~~
+../Core/Src/main.c:94:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "HAL_USART_SEND_MESSAGE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_SEND_MESSAGE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_SEND_MESSAGE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_USART_SEND_MESSAGE.elf
+ 
+arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
+arm-none-eabi-objdump -h -S HAL_USART_SEND_MESSAGE.elf  > "HAL_USART_SEND_MESSAGE.list"
+   text	   data	    bss	    dec	    hex	filename
+  10620	     92	   2028	  12740	   31c4	HAL_USART_SEND_MESSAGE.elf
+Finished building: default.size.stdout
+ 
+Finished building: HAL_USART_SEND_MESSAGE.list
+ 
+
+13:50:24 Build Finished. 0 errors, 2 warnings. (took 486ms)
+
