@@ -1,98 +1,152 @@
-13:41:52 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
+14:09:55 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:94:15: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
-   94 |   tx_buff[0]  = "HELLO world \n";
-      |               ^
-arm-none-eabi-g++ -o "HAL_USART_SEND_MESSAGE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_SEND_MESSAGE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_SEND_MESSAGE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: HAL_USART_SEND_MESSAGE.elf
- 
-arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
-arm-none-eabi-objdump -h -S HAL_USART_SEND_MESSAGE.elf  > "HAL_USART_SEND_MESSAGE.list"
-   text	   data	    bss	    dec	    hex	filename
-   8040	     12	   1692	   9744	   2610	HAL_USART_SEND_MESSAGE.elf
-Finished building: default.size.stdout
- 
-Finished building: HAL_USART_SEND_MESSAGE.list
- 
-13:41:54 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
-make -j16 all 
-arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
-   text	   data	    bss	    dec	    hex	filename
-   8040	     12	   1692	   9744	   2610	HAL_USART_SEND_MESSAGE.elf
-Finished building: default.size.stdout
- 
-13:43:20 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
+../Core/Src/main.c:109:22: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  109 |                   if(rx_buffer[3]= '1')
+      |                      ^~~~~~~~~
+../Core/Src/main.c:113:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  113 |                   else if(rx_buffer[3]= '2')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:117:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  117 |                   else if(rx_buffer[3]= '3')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:121:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  121 |                   else if(rx_buffer[3]= '4')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:127:20: error: assignment to expression with array type
+  127 |           rx_buffer="";
+      |                    ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:13:56 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:94:15: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
-   94 |   tx_buff[0]  = "HELLO world \n";
-      |               ^
-arm-none-eabi-g++ -o "HAL_USART_SEND_MESSAGE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_SEND_MESSAGE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_SEND_MESSAGE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: HAL_USART_SEND_MESSAGE.elf
- 
-arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
-arm-none-eabi-objdump -h -S HAL_USART_SEND_MESSAGE.elf  > "HAL_USART_SEND_MESSAGE.list"
-   text	   data	    bss	    dec	    hex	filename
-   8016	     12	   1692	   9720	   25f8	HAL_USART_SEND_MESSAGE.elf
-Finished building: default.size.stdout
- 
-Finished building: HAL_USART_SEND_MESSAGE.list
- 
-13:44:37 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:94:15: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
-   94 |   tx_buff[0]  = "HELLO world \n";
-      |               ^
-../Core/Src/main.c:95:49: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-   95 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
-      |                                                 ^~~~~~~
-../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   24 | #include "string.h"
+../Core/Src/main.c:109:22: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  109 |                   if(rx_buffer[3]= '1')
+      |                      ^~~~~~~~~
+../Core/Src/main.c:112:76: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
   +++ |+#include <stdio.h>
-   25 | /* USER CODE END Includes */
-../Core/Src/main.c:95:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-   95 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
-      |                                                 ^~~~~~~
-../Core/Src/main.c:95:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-arm-none-eabi-g++ -o "HAL_USART_SEND_MESSAGE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_SEND_MESSAGE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_SEND_MESSAGE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: HAL_USART_SEND_MESSAGE.elf
- 
-arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
-arm-none-eabi-objdump -h -S HAL_USART_SEND_MESSAGE.elf  > "HAL_USART_SEND_MESSAGE.list"
-   text	   data	    bss	    dec	    hex	filename
-  10648	     92	   2028	  12768	   31e0	HAL_USART_SEND_MESSAGE.elf
-Finished building: default.size.stdout
- 
-Finished building: HAL_USART_SEND_MESSAGE.list
- 
-13:50:23 **** Incremental Build of configuration Debug for project HAL_USART_SEND_MESSAGE ****
+   21 | 
+../Core/Src/main.c:112:76: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:112:76: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:114:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  114 |                   else if(rx_buffer[3]= '2')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:118:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  118 |                   else if(rx_buffer[3]= '3')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:122:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  122 |                   else if(rx_buffer[3]= '4')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:128:11: warning: statement with no effect [-Wunused-value]
+  128 |           rx_buffer
+      |           ^~~~~~~~~
+../Core/Src/main.c:128:20: error: expected ';' before '}' token
+  128 |           rx_buffer
+      |                    ^
+      |                    ;
+  129 |   }
+      |   ~                 
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:14:24 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:94:49: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-   94 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
-      |                                                 ^~~~~~~
-../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   24 | #include "string.h"
+../Core/Src/main.c:109:22: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  109 |                   if(rx_buffer[3]= '1')
+      |                      ^~~~~~~~~
+../Core/Src/main.c:112:76: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
   +++ |+#include <stdio.h>
-   25 | /* USER CODE END Includes */
-../Core/Src/main.c:94:49: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-   94 |   HAL_UART_Transmit(&huart3, (uint8_t*)tx_buff, sprintf(tx_buff,"Hello World\n"), 100);
-      |                                                 ^~~~~~~
-../Core/Src/main.c:94:49: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-arm-none-eabi-g++ -o "HAL_USART_SEND_MESSAGE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_SEND_MESSAGE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_SEND_MESSAGE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: HAL_USART_SEND_MESSAGE.elf
+   21 | 
+../Core/Src/main.c:112:76: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:112:76: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:114:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  114 |                   else if(rx_buffer[3]= '2')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:118:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  118 |                   else if(rx_buffer[3]= '3')
+      |                           ^~~~~~~~~
+../Core/Src/main.c:122:27: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  122 |                   else if(rx_buffer[3]= '4')
+      |                           ^~~~~~~~~
+arm-none-eabi-g++ -o "HAL_USART_MESSAGE_SEND_and_RECEIVE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_MESSAGE_SEND_and_RECEIVE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_MESSAGE_SEND_and_RECEIVE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
  
-arm-none-eabi-size  HAL_USART_SEND_MESSAGE.elf 
-arm-none-eabi-objdump -h -S HAL_USART_SEND_MESSAGE.elf  > "HAL_USART_SEND_MESSAGE.list"
+arm-none-eabi-size  HAL_USART_MESSAGE_SEND_and_RECEIVE.elf 
+arm-none-eabi-objdump -h -S HAL_USART_MESSAGE_SEND_and_RECEIVE.elf  > "HAL_USART_MESSAGE_SEND_and_RECEIVE.list"
    text	   data	    bss	    dec	    hex	filename
-  10620	     92	   2028	  12740	   31c4	HAL_USART_SEND_MESSAGE.elf
+  11184	     92	   2076	  13352	   3428	HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
 Finished building: default.size.stdout
  
-Finished building: HAL_USART_SEND_MESSAGE.list
+Finished building: HAL_USART_MESSAGE_SEND_and_RECEIVE.list
+ 
+14:15:19 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:76: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:112:76: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:112:76: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-g++ -o "HAL_USART_MESSAGE_SEND_and_RECEIVE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_MESSAGE_SEND_and_RECEIVE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_MESSAGE_SEND_and_RECEIVE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+ 
+arm-none-eabi-size  HAL_USART_MESSAGE_SEND_and_RECEIVE.elf 
+arm-none-eabi-objdump -h -S HAL_USART_MESSAGE_SEND_and_RECEIVE.elf  > "HAL_USART_MESSAGE_SEND_and_RECEIVE.list"
+   text	   data	    bss	    dec	    hex	filename
+  11248	     92	   2076	  13416	   3468	HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+Finished building: default.size.stdout
+ 
+Finished building: HAL_USART_MESSAGE_SEND_and_RECEIVE.list
+ 
+14:22:00 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:76: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:112:76: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:112:76: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:126:31: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  126 |                   rx_buffer[0]="00";
+      |                               ^
+arm-none-eabi-g++ -o "HAL_USART_MESSAGE_SEND_and_RECEIVE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_MESSAGE_SEND_and_RECEIVE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_MESSAGE_SEND_and_RECEIVE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+ 
+arm-none-eabi-size  HAL_USART_MESSAGE_SEND_and_RECEIVE.elf 
+arm-none-eabi-objdump -h -S HAL_USART_MESSAGE_SEND_and_RECEIVE.elf  > "HAL_USART_MESSAGE_SEND_and_RECEIVE.list"
+   text	   data	    bss	    dec	    hex	filename
+  11264	     92	   2076	  13432	   3478	HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+Finished building: default.size.stdout
+ 
+Finished building: HAL_USART_MESSAGE_SEND_and_RECEIVE.list
  

@@ -1,0 +1,32 @@
+14:22:00 **** Incremental Build of configuration Debug for project HAL_USART_MESSAGE_SEND_and_RECEIVE ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:76: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:112:76: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  112 |                           HAL_UART_Transmit(&huart2, (uint8_t*)tx_buffer , sprintf(tx_buffer,"LED1 ON/OFF"), 100);
+      |                                                                            ^~~~~~~
+../Core/Src/main.c:112:76: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:126:31: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  126 |                   rx_buffer[0]="00";
+      |                               ^
+arm-none-eabi-g++ -o "HAL_USART_MESSAGE_SEND_and_RECEIVE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\STM32CubeIDE\workspace_1.16.1\STM32\STM32F4_Basics\HAL_USART_MESSAGE_SEND_and_RECEIVE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_USART_MESSAGE_SEND_and_RECEIVE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+ 
+arm-none-eabi-size  HAL_USART_MESSAGE_SEND_and_RECEIVE.elf 
+arm-none-eabi-objdump -h -S HAL_USART_MESSAGE_SEND_and_RECEIVE.elf  > "HAL_USART_MESSAGE_SEND_and_RECEIVE.list"
+   text	   data	    bss	    dec	    hex	filename
+  11264	     92	   2076	  13432	   3478	HAL_USART_MESSAGE_SEND_and_RECEIVE.elf
+Finished building: default.size.stdout
+ 
+Finished building: HAL_USART_MESSAGE_SEND_and_RECEIVE.list
+ 
+
+14:22:00 Build Finished. 0 errors, 3 warnings. (took 488ms)
+
