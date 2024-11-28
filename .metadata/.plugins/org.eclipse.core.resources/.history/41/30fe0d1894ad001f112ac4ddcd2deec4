@@ -1,0 +1,12 @@
+/*
+ * BMP180Device_test.cpp
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: pc
+ */
+
+#include "BMP180Device.h"
+
+namespace Devices {
+
+} /* namespace Devices */

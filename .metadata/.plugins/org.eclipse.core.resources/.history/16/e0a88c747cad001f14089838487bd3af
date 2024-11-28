@@ -1,0 +1,27 @@
+/*
+ * deneme.cpp
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: pc
+ */
+
+//#include "iostream"
+
+void denemeFunc()
+{
+
+}
+/*
+
+class denemeClass
+{
+public:
+	int x;
+	denemeClass(): x{1}
+	{
+
+	}
+
+};
+
+ * */

@@ -1,0 +1,19 @@
+/*
+ * deneme.h
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: pc
+ */
+
+#ifndef INC_DENEME_H_
+#define INC_DENEME_H_
+//include <iostream>
+
+void denemeFunc();
+
+class A ;
+
+
+
+
+#endif /* INC_DENEME_H_ */

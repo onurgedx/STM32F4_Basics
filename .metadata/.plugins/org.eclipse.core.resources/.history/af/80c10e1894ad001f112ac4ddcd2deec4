@@ -1,0 +1,25 @@
+/*
+ * BMP180Device.h
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: pc
+ */
+
+#ifndef SRC_BMP180DEVICE_H_
+#define SRC_BMP180DEVICE_H_
+
+namespace Devices {
+
+class BMP180Device {
+public:
+	BMP180Device();
+	virtual ~BMP180Device();
+	BMP180Device(const BMP180Device &other);
+	BMP180Device(BMP180Device &&other);
+	BMP180Device& operator=(const BMP180Device &other);
+	BMP180Device& operator=(BMP180Device &&other);
+};
+
+} /* namespace Devices */
+
+#endif /* SRC_BMP180DEVICE_H_ */

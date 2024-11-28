@@ -1,0 +1,24 @@
+/*
+ * deneme.cpp
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: pc
+ */
+
+
+void denemeFunc()
+{
+
+}
+
+
+class denemeClass
+{
+public:
+	int x;
+	denemeClass()
+	{
+
+	}
+
+};

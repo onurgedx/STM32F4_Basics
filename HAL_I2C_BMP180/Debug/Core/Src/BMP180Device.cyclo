@@ -1,0 +1,7 @@
+../Core/Src/BMP180Device.cpp:12:1:Devices::BMP180Device::BMP180Device()	1
+../Core/Src/BMP180Device.cpp:17:1:Devices::BMP180Device::~BMP180Device()	1
+../Core/Src/BMP180Device.cpp:17:1:virtual Devices::BMP180Device::~BMP180Device()	1
+../Core/Src/BMP180Device.cpp:21:1:Devices::BMP180Device::BMP180Device(const Devices::BMP180Device&)	1
+../Core/Src/BMP180Device.cpp:26:1:Devices::BMP180Device::BMP180Device(Devices::BMP180Device&&)	1
+../Core/Src/BMP180Device.cpp:31:15:Devices::BMP180Device& Devices::BMP180Device::operator=(const Devices::BMP180Device&)	1
+../Core/Src/BMP180Device.cpp:36:15:Devices::BMP180Device& Devices::BMP180Device::operator=(Devices::BMP180Device&&)	1

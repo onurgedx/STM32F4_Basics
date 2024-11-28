@@ -1,0 +1,21 @@
+/*
+ * bmp180.c
+ *
+ *  Created on: Nov 28, 2024
+ *      Author: Onur Gedik
+ */
+
+#include "bmp180.h"
+
+void BMP180_Init()
+{
+	if(HAL_I2C_IsDeviceReady(&hi2c1, BMP180_DEVICE_WRITE_REGISTER_ADDRESS, 1, 100)!=HAL_OK)
+	{
+
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+}
+
+void BMP180_GetCalibration();
+
+
